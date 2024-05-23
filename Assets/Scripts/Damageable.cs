@@ -111,7 +111,7 @@ public class Damageable : MonoBehaviour
             LockVelocity = true;
             damageableHit?.Invoke(damage, knockback);
             //Invoke để gọi event thực hiện, ở đây là characterDamaged
-            //CharacterEvents.characterDamaged.Invoke(gameObject, damage);
+            CharacterEvents.characterDamaged.Invoke(gameObject, damage);
             return true;
             
         }
@@ -126,7 +126,7 @@ public class Damageable : MonoBehaviour
             //tìm ra giá trị máu có thể hồi thực tế, vì vật phẩm chỉ có thể hồi tối đa theo chỉ số healthRestore, nên nếu máu có thể hồi > giá trị hồi máu của vật phẩm thì lấy giá trị min là số máu có thể hồi của vật phẩm
             int actualHeal = Mathf.Min(maxHeal, healthRestore);
             Health += actualHeal;
-            //CharacterEvents.characterHealed(gameObject, actualHeal);
+            CharacterEvents.characterHealed(gameObject, actualHeal);
             return true;
         }
         return false;

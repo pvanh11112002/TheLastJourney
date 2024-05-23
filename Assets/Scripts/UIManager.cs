@@ -12,12 +12,12 @@ public class UIManager : Singleton<UIManager>
     public Canvas gameCanvas;
 
     
-    private void Awake()
-    {
-        gameCanvas= FindObjectOfType<Canvas>();
+    //private void Awake()
+    //{
+    //    gameCanvas= FindObjectOfType<Canvas>();
 
         
-    }
+    //}
     private void OnEnable()
     {
         CharacterEvents.characterDamaged += CharacterTookDamage;
