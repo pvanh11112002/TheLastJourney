@@ -7,6 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class CanvasMainMenu : UICanvas
 {
+    private void OnEnable()
+    {
+        SoundManager.Instance.Play("Main Menu");
+    }
+    private void OnDisable()
+    {
+        SoundManager.Instance.Pause("Main Menu");
+    }
     public void PlayButton()
     {
         MainMenuUIManager.Instance.OpenUI<CanvasGamePlay>();
@@ -16,6 +24,7 @@ public class CanvasMainMenu : UICanvas
         Close(0);
         
     }
+
     public void SettingButton()
     {
         MainMenuUIManager.Instance.OpenUI<CanvasSetting>();

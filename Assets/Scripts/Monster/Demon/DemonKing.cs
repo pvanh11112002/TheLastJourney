@@ -35,4 +35,8 @@ public class DemonKigng : Singleton<DemonKigng>
     {
         anim.SetTrigger("Idle");
     }
+    public void DemonAttack()
+    {
+        SoundManager.Instance.Play("Throw Fire");
+    }
 }

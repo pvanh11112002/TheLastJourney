@@ -3,7 +3,7 @@
 public class UserData
 {
     public int defaultCurrentLevel = 1;
-    public int currentLevel = 1;
+    public int currentLevel = 3;
 }
 public class DataManager : Singleton<DataManager>
 {

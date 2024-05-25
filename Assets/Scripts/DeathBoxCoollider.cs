@@ -7,9 +7,13 @@ public class DeathBoxCoollider : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.SetActive(false);
-        GameManager.Instance.currentState = GameState.Pause;
-        MainMenuUIManager.Instance.CloseAll();
-        MainMenuUIManager.Instance.OpenUI<CanvasFail>();
+        if(collision.tag == "Player")
+        {
+            collision.gameObject.SetActive(false);
+            GameManager.Instance.currentState = GameState.Pause;
+            MainMenuUIManager.Instance.CloseAll();
+            MainMenuUIManager.Instance.OpenUI<CanvasFail>();
+        }
+        
     }
 }

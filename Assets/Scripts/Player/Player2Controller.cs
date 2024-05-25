@@ -108,7 +108,7 @@ public class Player2Controller : MonoBehaviour
         }
     }
     
-    
+    private Inventory inventory;
 
     void Awake()
     {
@@ -116,6 +116,7 @@ public class Player2Controller : MonoBehaviour
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
         damageable = GetComponent<Damageable>();
+        inventory = new Inventory();
     }
     void FixedUpdate()
     {

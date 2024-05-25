@@ -40,4 +40,8 @@ public class UriaSoulEaterControl : Singleton<UriaSoulEaterControl>
     {
         anim.SetTrigger("Idle");
     }
+    public void SwordAttack()
+    {
+        SoundManager.Instance.Play("Sword Attack");
+    }
 }

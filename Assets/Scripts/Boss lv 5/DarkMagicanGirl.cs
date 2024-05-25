@@ -12,6 +12,13 @@ public class DarkMagicanGirl : Singleton<DarkMagicanGirl>
     }
     private void OnDestroy()
     {
-        winGame.SetActive(true);
+        if (winGame != null)
+        {
+            winGame.SetActive(true);
+        }
+    }
+    public void MagicAttack()
+    {
+        SoundManager.Instance.Play("Magic Attack");
     }
 }
