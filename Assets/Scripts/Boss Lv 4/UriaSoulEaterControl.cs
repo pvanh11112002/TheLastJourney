@@ -29,6 +29,7 @@ public class UriaSoulEaterControl : Singleton<UriaSoulEaterControl>
     }
     public void OnDespawn()
     {
+        SoundManager.Instance.Play("Uria");
         anim.SetTrigger("isDead");
         Invoke("OnDestroy", 1);
     }

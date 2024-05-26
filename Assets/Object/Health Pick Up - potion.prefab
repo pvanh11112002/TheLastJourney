@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7408566791133086906}
   - component: {fileID: 322120860924143803}
   m_Layer: 0
-  m_Name: Health Pick Up - Dragon Fruit
+  m_Name: Health Pick Up - potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b2834b9a4be626e4d8a56e1cde70b1b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce6c836d2bf97ed45a37bff18bb641f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1278d80d534b1439a953e0fab3d546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthRestore: 20
+  healthRestore: 40
   spinRotationSpeed: {x: 0, y: 180, z: 0}
 --- !u!58 &7408566791133086906
 CircleCollider2D:

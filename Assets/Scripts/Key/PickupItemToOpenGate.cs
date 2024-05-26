@@ -9,6 +9,7 @@ public class PickupItemToOpenGate : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            SoundManager.Instance.Play("Pick Item");
             Destroy(gameObject);
         }
         

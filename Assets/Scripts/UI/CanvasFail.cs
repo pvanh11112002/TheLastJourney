@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class CanvasFail : UICanvas
 {
+    private void OnEnable()
+    {
+        SoundManager.Instance.StopAll();
+        SoundManager.Instance.Play("Fail");
+    }
     public void MainMenuButton()
     {
         Close(0);

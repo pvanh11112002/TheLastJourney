@@ -661,6 +661,30 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: 'Ariel '
+    clip: {fileID: 8300000, guid: fdb41792b70efd340a8c650f968a75c6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Uria
+    clip: {fileID: 8300000, guid: d0f2af43deeb97b4bb7949c61a3603d9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fail
+    clip: {fileID: 8300000, guid: d717dee51c27c864c8bc042cb3132f6a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pick Item
+    clip: {fileID: 8300000, guid: 69c53cad004780d4a976aae669f04f22, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &1902373299
 GameObject:
   m_ObjectHideFlags: 0

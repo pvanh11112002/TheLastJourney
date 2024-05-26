@@ -29,6 +29,7 @@ public class DemonKigng : Singleton<DemonKigng>
     }
     public void OnDespawn()
     {
+        SoundManager.Instance.Play("Ariel");
         Destroy(gameObject);       
     }
     public void SetIdle()
